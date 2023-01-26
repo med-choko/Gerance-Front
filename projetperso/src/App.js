@@ -10,6 +10,10 @@ import AllUsers from './Components/AllUsers';
 import 'semantic-ui-css/semantic.min.css'
 import Profil from './Components/Profil';
 import Formulaire from './Components/Formulaire';
+import AddTelephones from './Components/AddTelephones';
+import AllPhone from './Components/AllPhone';
+import Phone from './Components/Phone';
+
 
 function App() {
   return (
@@ -33,8 +37,12 @@ function App() {
         <Route path="/formulaire" element={<Formulaire />} />
 
 
+        <Route path="/addtelephones" element={<AddTelephones />} />
+
+        <Route path="/allphones" element={<AllPhone />} />
 
 
+        <Route path="/telephone/:reference" element={<Phone />} />
 
       </Routes>
 
